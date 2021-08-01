@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/main.min.css" rel="stylesheet">
+        <title>WBandits</title>
+    </head>
+    <body>
+
+        <header>
+            <section class="container">
+                <div class="row py-2">
+                    <div class="col-2">
+                        <a href="profile.html" class="close header__btn--close ml-3">
+                            <span>&times;</span>
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <p class="h5 text-center text-uppercase text-bold mt-1 mr-5 mb-0">Добавить адрес</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section class="container-fluid">
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" type="city" class="form-control" id="city" required>
+                        <label class="form-label" for="city">Город *</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="street" class="form-control" id="street" required>
+                        <label class="form-label" for="street">Улица *</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <input class="form-control" type="text" class="form-control" id="text" required>
+                            <label class="form-label pl-1" for="text">Номер дома *</label>
+                        </div>
+                        <div class="form-group col-6">
+                            <input class="form-control" type="text" class="form-control" id="text" required>
+                            <label class="form-label pl-1" for="text">Квартира/офис *</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="postalcode" class="form-control" id="postalcode" required>
+                        <label class="form-label" for="postalcode">Почтовый индекс *</label>
+                    </div>
+                  </form>
+                  <a class="text-uppercase text-bold btn btn-dark btn-block mt-4 mb-3" href="#">Сохранить адрес</a>
+            </section>
+        </main>
+
+    </body>
+
+    <script src="../js/main.js"></script>
+
+</html>
