@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/main.min.css" rel="stylesheet">
+        <title>WBandits</title>
+    </head>
+    <body>
+
+        <header class="header fixed-top">
+            <section class="container">
+                <a href="profile.html" class="header__arrow-back ml-3">
+                    <img src="img/icon-close.svg" width="20" height="20" alt="">
+                </a>
+                <p class="title-rc__bold--16 text-uppercase text-center mb-0">Изменить адрес</p>
+            </section>
+        </header>
+
+        <main>
+            <section class="container-fluid">
+                <form>
+                    <div class="form-group mt-5">
+                        <input class="form-control" type="city" class="form-control" id="city" required>
+                        <label class="form-label" for="city">Город</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="street" class="form-control" id="street" required>
+                        <label class="form-label" for="street">Улица</label>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <input class="form-control" type="text" class="form-control" id="text" required>
+                            <label class="form-label pl-1" for="text">Номер дома</label>
+                        </div>
+                        <div class="form-group col-6">
+                            <input class="form-control" type="text" class="form-control" id="text" required>
+                            <label class="form-label pl-1" for="text">Квартира/офис</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="postalcode" class="form-control" id="postalcode" required>
+                        <label class="form-label" for="postalcode">Почтовый индекс</label>
+                    </div>
+                  </form>
+                  <a class="btn-rc__bold--14 text-uppercase btn btn-dark btn-block mt-5" href="#">Сохранить изменения</a>
+            </section>
+        </main>
+
+    </body>
+
+    <script src="js/main.js"></script>
+
+</html>

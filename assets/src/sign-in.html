@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.min.css" rel="stylesheet">
+        <title>WBandits</title>
+    </head>
+    <body>
+
+        <header class="header fixed-top">
+            <section class="container">
+                <a href="#" onclick="history.back();" class="header__arrow-back ml-3">
+                    <img src="img/icon-close.svg" width="20" height="20" alt="">
+                </a>
+                <p class="title-rc__bold--16 text-uppercase text-center invisible mb-0">Вход</p>
+            </section>
+        </header>
+
+        <main>
+            <section class="container">
+                <h2 class="title-rc__bold--24 text-uppercase pt-5 mb-3">Вход</h2>
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" type="email" class="form-control" id="email" required>
+                        <label class="form-label" for="email">Эл. почта *</label>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="password" class="form-control" id="password" required>
+                        <label class="form-label" for="password">Пароль *</label>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end">
+                    <a class="link-rc__regular--16 black" href="password-recovery.html"><u>Забыли пароль?</u></a>
+                </div>
+                <a class="btn-rc__bold--14 text-uppercase btn btn-dark btn-block mt-4" href="sign-in.html">Войти</a>
+            </section>
+        </main>
+      
+        <footer class="fixed-bottom">
+            <div class="container">
+                <p class="link-rc__regular--16 text-center">Нет аккаунта? <a href="sign-up.html"><u>Зарегистрироваться</u></a></p>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="js/main.js"></script>
+  
+</html>

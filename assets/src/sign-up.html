@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/main.min.css" rel="stylesheet">
+        <title>WBandits</title>
+    </head>
+    <body>
+
+        <header class="header fixed-top">
+            <section class="container">
+                <a href="#" onclick="history.back();" class="header__arrow-back ml-3">
+                    <img src="img/icon-close.svg" width="20" height="20" alt="">
+                </a>
+                <p class="title-rc__bold--16 text-uppercase text-center mb-0">Создать аккаунт</p>
+            </section>
+        </header>
+
+        <main>
+            <section class="container" style="margin-bottom: 200px;">
+                <div class="nav nav-tabs row mb-3" id="nav-tab" role="tablist">
+                    <a class="nav-link active col-6" id="nav-tab-buyer" href="#buyer" role="tab" data-toggle="tab">Частный покупатель</a>
+                    <a class="nav-link col-6"  id="nav-tab-company" href="#company"role="tab" data-toggle="tab">Компания</a>
+                </div>
+                <div class="tab-content" id="tab-content">
+                    <div class="tab-pane fade active show" role="tabpanel" id="buyer">
+                        <form>
+                            <div class="form-group">
+                              <input class="form-control" type="email" class="form-control" id="email" required>
+                              <label class="form-label" for="email">Эл. почта *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" class="form-control" id="password" required>
+                              <label class="form-label" for="password">Пароль *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="tel" class="form-control" id="tel" required>
+                              <label class="form-label" for="tel">Мобильный телефон *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="name" class="form-control" id="name" required>
+                              <label class="form-label" for="name">Имя *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="surname" class="form-control" id="surname" required>
+                              <label class="form-label" for="surname">Фамилия *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="date" class="form-control" id="date">
+                              <label class="form-label" for="date">Дата рождения</label>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Размер одежды</label>
+                              </div>
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Объём груди</label>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Размер обуви</label>
+                              </div>
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Объём талии</label>
+                              </div>
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Длина стельки (см)</label>
+                              </div>
+                              <div class="form-group col-6">
+                                <input class="form-control" type="text" class="form-control" id="size" required>
+                                <label class="form-label pl-1" for="size">Объём бедер</label>
+                              </div>
+                            </div>
+                        </form>
+                        <a class="text-body d-flex align-content-center" href="menu-info-size.html">
+                            <img src="files/icon-question.svg" width="20" height="25" alt="Вопрос">
+                            <p class="link-rc__regular--16 mt-1 ml-1"><u>Как снять размеры?</u></p>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="company">
+                        <form>
+                            <div class="form-group">
+                              <input class="form-control" type="email" class="form-control" id="email" required>
+                              <label class="form-label" for="email">Эл. почта *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" class="form-control" id="password" required>
+                              <label class="form-label" for="password">Пароль *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="tel" class="form-control" id="tel" required>
+                              <label class="form-label" for="tel">Мобильный телефон *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="name" class="form-control" id="name" required>
+                              <label class="form-label" for="name">Имя *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="surname" class="form-control" id="surname" required>
+                              <label class="form-label" for="surname">Фамилия *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" class="form-control" id="position" required>
+                              <label class="form-label" for="position">Должность *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" class="form-control" id="city" required>
+                              <label class="form-label" for="city">Город доставки *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" class="form-control" id="company" required>
+                              <label class="form-label" for="company">Название компании *</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" class="form-control" id="site" required>
+                              <label class="form-label" for="site">Сайт компании</label>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="text" class="form-control" id="instagram" required>
+                              <label class="form-label" for="instagram">Инстаграм</label>
+                            </div>
+                        </form>  
+                    </div>
+                </div> 
+            </section>    
+        </main>
+
+        <footer class="fixed-bottom" style="background-color: #FFFFFF;">
+            <div class="container">
+                <p class="font-rc__regular--14">Нажимая «Создать аккаунт», Вы принимаете следующие условия:  <a href="#"><u>Условия и Политика конфиденциальности.</u></a></p>
+                <a class="btn-rc__bold--14 text-uppercase btn btn-dark btn-block my-4" href="sign-in.html">Создать аккаунт</a>
+                <p class="link-rc__regular--16 text-center">Уже зарегистрированы? <a href="sign-up.html"><u>Войти</u></a></p>
+            </div>
+        </footer>
+
+    </body>
+
+    <script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/main.min.css" rel="stylesheet">
+        <title>WBandits</title>
+    </head>
+    <body>
+
+        <header class="header fixed-top">
+            <section class="container">
+                <a href="sections.html" class="header__arrow-back ml-3">
+                    <img src="files/arrow-back.svg" width="20" height="20" alt="">
+                </a>
+                <p class="title-rc__bold--16 text-uppercase text-center mb-0">Кофты</p>
+            </section>
+        </header>
+    
+        <main>
+
+            <section class="container" style="border-bottom: 1px solid #EEEEEE;">
+                <div class="d-flex justify-content-between py-2">
+                    <a href="filter-main.html" class="d-flex text-dark">
+                        <p class="text-bold mb-0">Фильтровать&nbsp;</p>
+                        <img class="mt-1" src="files/filter.svg" width="15" height="15" alt="">
+                    </a>
+                    <div class="d-flex" type="button" data-toggle="modal" data-target="#sorting">
+                        <p class="text-bold mb-0">По популярности&nbsp;</p>
+                        <img class="mt-1" src="files/arrow-down.svg" width="15" height="15" alt="">
+                    </div>                    
+                </div>
+                <div class="modal fade" id="sorting" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog__sorting">
+                        <div class="modal-content modal-content__sorting">
+                            <div class="modal-header row py-2">
+                                <div class="col-2">
+                                    <button type="button" class="close header__btn--close" data-dismiss="modal" aria-label="Close">
+                                        <img src="img/icon-close.svg" width="20" height="20" alt="">
+                                    </button>
+                                </div>
+                                <div class="col-10">
+                                    <p class="modal-title text-center text-uppercase title-rc__bold--14 mt-1 mr-5 mb-0" id="sortingLabel">Сортировать</p>
+                                </div>
+                            </div>
+                            <div class="modal-body__sorting btn-group-vertical" role="group">
+                                <button type="button" class="btn btn-link text-center sorting-item">По популярности</button>
+                                <button type="button" class="btn btn-link text-center sorting-item">По возрастанию цены</button>
+                                <button type="button" class="btn btn-link text-center sorting-item">По убыванию цены</button>
+                                <button type="button" class="btn btn-link text-center sorting-item">По новинкам</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="#">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-1.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Ботинки демисезон</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #1A1A1C; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">36</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">37</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">38</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">39</p></button>   
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="products-detail.html">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-2.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Платье-рубашка</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #8E747D; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #43679F; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #CACACA; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">42</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">44</p></button> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="products-detail.html">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-3.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Свитер</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #8E747D; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #43679F; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #CACACA; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">42</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">44</p></button> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="products-detail.html">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-4.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Джинсы</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #8E747D; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #43679F; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #CACACA; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">42</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">44</p></button> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="products-detail.html">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-5.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Свитер вязаный</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #8E747D; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #43679F; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #CACACA; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">42</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">44</p></button> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="col-6 p-2">
+                        <div class="card">
+                            <a href="products-detail.html">
+                                <button type="button" class="card__icon-favorite btn">
+                                </button>
+                                <img src="files/sale-6.png" class="card-img-top" alt="...">
+                            </a>
+                            <p class="font-rc__regular--12 red mt-3 mb-0">Выгода 300 руб. / -10%</p>
+                            <div class="d-flex">
+                                <p class="font-rc__regular--12 mb-1"><s>1 900 руб. </s></p>
+                                <p class="title-rc__bold--16 red text-uppercase mb-1">&nbsp;&nbsp;1 900 руб.</p>
+                            </div>
+                            <p class="font-rc__regular--14 mb-0">Свитер</p>
+                            <div class="d-flex">
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #8E747D; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #43679F; padding: 6px;"></button>
+                                <button class="button my-1 mr-2" style="width: 6px; height: 6px; border: none; border-radius: 50px; background-color: #CACACA; padding: 6px;"></button>
+                            </div>
+                            <div class="d-flex">
+                                <button class="button pl-0" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">42</p></button>
+                                <button class="button" style="border: none; background-color: transparent"><p class="font-rc__regular--10 grey-medium">44</p></button> 
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+            </section>    
+        </main>
+    
+        <footer>
+            <nav class="navbar justify-content-center fixed-bottom" style="background-color: #ffffff;">
+                <ul class="nav row row-cols-5 d-flex justify-content-between" style="width: 100%;">
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link active p-0" href="index.html">
+                            <div class="text-center">
+                                <img src="img/icon-menu-index-active.svg" width="25" height="25" alt="">
+                            </div>
+                            <p class="font-r__regular--12 red mb-0">Главная</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link p-0" href="catalog.html">
+                            <div class="text-center">
+                                <img src="img/icon-menu-catalog.svg" width="25" height="25" alt="">
+                            </div>
+                            <p class="font-r__regular--12 grey-medium mb-0">Каталог</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link p-0" href="basket.html">
+                            <div class="text-center">
+                                <img src="img/icon-menu-basket.svg" width="25" height="25" alt="">   
+                            </div>
+                            <p class="font-r__regular--12 grey-medium mb-0">Корзина</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link p-0" href="favorites.html">
+                            <div class="text-center">
+                               <img src="img/icon-menu-bookmarks.svg" width="25" height="25" alt="">
+                            </div>
+                            <p class="font-r__regular--12 grey-medium mb-0">Избранное</p>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center">
+                        <a class="nav-link p-0" href="profile.html">
+                            <div class="text-center">
+                                <img src="img/icon-menu-account.svg" width="25" height="25" alt="">
+                            </div>
+                            <p class="font-r__regular--12 grey-medium mb-0">Аккаунт</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </body>
+
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+</html>
